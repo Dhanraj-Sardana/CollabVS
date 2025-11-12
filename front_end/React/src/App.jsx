@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import StarterGUI from './components/StarterGUI';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Conflict from './components/Conflictfile.jsx';
