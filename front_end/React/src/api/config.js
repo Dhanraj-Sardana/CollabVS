@@ -2,6 +2,13 @@ export const BACKEND_URL = "https://collabvs.onrender.com";
 
 export async function runCommand(command, args = []) {
   try {
+  
+    if (window && window.electronAPI) {
+      const result = await window.electronAPI.runCommand(command, args);
+      return result || "No response from Electron process";
+    }
+
+ 
     const response = await fetch(`${BACKEND_URL}/api/command`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
