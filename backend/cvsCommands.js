@@ -1,0 +1,18 @@
+module.exports = {
+  initRepo: require("./commands/init").initRepo,
+  addFile: require("./commands/add").addFile,
+  commit: require("./commands/commit").commit,
+  logCommits: require("./commands/log").logCommits,
+  checkout: require("./commands/checkout").checkout,
+  createBranch: require("./commands/branch").createBranch,
+  switchBranch: require("./commands/switchBranch").switchBranch,
+  mergeBranch: require("./commands/merge").mergeBranch,
+  pushToServer: require("./commands/pushToServer").pushToServer,
+  clone: require("./commands/clone").clone,
+  pull: require("./commands/pull").pull,
+  fetch: require("./commands/fetch").fetch,
+  status: require("./commands/status").status,
+  rebase: require("./commands/rebase").rebase,
+  stash: require("./commands/stash").stash,
+  stashPop: require("./commands/stashpop").stashPop,
+};
